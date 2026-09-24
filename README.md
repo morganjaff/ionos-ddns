@@ -33,7 +33,7 @@ enregistrements `A` vers l'IP publique courante, à intervalle régulier.
 |---|---|---|---|
 | `IONOS_API_KEY` | oui | — | Clé API IONOS (format `prefix.secret`) |
 | `IONOS_DOMAINS` | oui | — | Domaines à synchroniser, séparés par des virgules |
-| `CRON_SCHEDULE` | non | `*/5 * * * *` | Intervalle de synchronisation |
+| `CRON_SCHEDULE` | non | `*/30 * * * *` | Intervalle de synchronisation |
 | `IONOS_TTL` | non | `60` | TTL des enregistrements DNS (secondes) |
 | `TZ` | non | `UTC` | Fuseau horaire pour l'horodatage des logs |
 
@@ -68,7 +68,7 @@ records to the current public IP address, at a regular interval.
 |---|---|---|---|
 | `IONOS_API_KEY` | yes | — | IONOS API key (`prefix.secret` format) |
 | `IONOS_DOMAINS` | yes | — | Comma-separated list of domains to sync |
-| `CRON_SCHEDULE` | no | `*/5 * * * *` | Sync interval (cron syntax) |
+| `CRON_SCHEDULE` | no | `*/30 * * * *` | Sync interval (cron syntax) |
 | `IONOS_TTL` | no | `60` | DNS record TTL (seconds) |
 | `TZ` | no | `UTC` | Timezone used for log timestamps |
 
