@@ -25,8 +25,8 @@
   <Requires/>
   <Config Name="IONOS_API_KEY" Target="IONOS_API_KEY" Default="" Mode="" Description="IONOS API key (prefix.secret format)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="IONOS_DOMAINS" Target="IONOS_DOMAINS" Default="" Mode="" Description="Comma-separated list of domains (spaces allowed)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="CRON_SCHEDULE" Target="CRON_SCHEDULE" Default="" Mode="" Description="Synchronization interval (cron syntax)" Type="Variable" Display="always" Required="true" Mask="false">*/30 * * * *</Config>
-  <Config Name="TZ" Target="TZ" Default="Europe/Paris" Mode="" Description="Time zone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Paris</Config>
+  <Config Name="CRON_SCHEDULE" Target="CRON_SCHEDULE" Default="*/30 * * * *" Mode="" Description="Synchronization interval (cron syntax)" Type="Variable" Display="always" Required="true" Mask="false">*/30 * * * *</Config>
+  <Config Name="TZ" Target="TZ" Default="Europe/Paris" Mode="" Description="Time zone" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="logs" Target="/var/log" Default="" Mode="rw" Description="Synchronization logs" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ionos-ddns/logs</Config>
   <TailscaleStateDir/>
 </Container>
